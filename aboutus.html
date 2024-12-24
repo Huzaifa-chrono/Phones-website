@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - U&U/Electronics</title>
+    <!-- Correctly include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+          /* Change the color of the toggler button */
+          .navbar-toggler {
+            border-color:rgb(241, 220, 28); /* yellow border color */
+        }
+    
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .about-section {
+            background-color: #f8f9fa;
+            padding: 50px 0;
+        }
+        .about-header {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+        }
+        .team-member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .team-member h5 {
+            margin-top: 10px;
+        }
+        .team-member p {
+            color: #777;
+        }
+        .about-text {
+            text-align: justify;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">U&U/Electronics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-underline mx-auto mb-2 mb-lg-0"> <!-- Use mx-auto to center the nav items -->
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="product.html">Products</a>
+                    </li>
+                </ul>
+                <a href="login.html"><button type="button" class="btn btn-outline-warning me-2">Login</button></a>
+                <a href="sign in.html"><button type="button" class="btn btn-outline-warning">Sign in</button></a>
+                <a href="#" class="text-light ms-2" title="Cart">
+                    <button type="button" class="btn btn-outline-warning"><i class="bi bi-bag-check-fill"></i>&nbsp;Cart</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+<!-- About Us Section -->
+<div class="about-section">
+    <div class="container">
+        <!-- About Header -->
+        <div class="about-header">
+            <h2 class="text-warning">About Us</h2>
+            <p class="lead">U&U/Electronics is a leading provider of top-quality electronic devices, offering the best value and customer service in the market. Our team is dedicated to bringing you the latest in electronic innovation.</p>
+        </div>
+
+        <!-- Company Overview -->
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="text-warning">Our Mission</h4>
+                <p class="about-text">At U&U/Electronics, our mission is to deliver top-notch electronics that enhance the lives of our customers. We strive to provide high-quality products, excellent customer service, and innovative solutions for all your tech needs. From cutting-edge gadgets to everyday appliances, we bring you the best in the industry.</p>
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-warning">Our Vision</h4>
+                <p class="about-text">Our vision is to become the leading electronics retailer worldwide, known for our commitment to customer satisfaction, product quality, and the latest innovations in technology. We aim to build long-lasting relationships with our customers and empower them with the latest electronic advancements.</p>
+            </div>
+        </div>
+
+        <!-- Meet the Team -->
+        <h3 class="text-center text-warning my-5">Meet Our Team</h3>
+        <div class="row">
+            <div class="col-md-4 team-member">
+                <img src="https://media.licdn.com/dms/image/v2/C4D03AQHj62BirzhWlA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1634123058043?e=2147483647&v=beta&t=zonyDEf54yMcU37tX77-qbR-dHhFfB9C-FNeBe5oPD0" alt="Team Member 1">
+                <h5>Umair Khan</h5>
+                <p>CEO & Founder</p>
+                <p>Umair is the visionary behind U&U/Electronics, overseeing the company's growth and innovation.</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQFwxNfi2lXk6w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1724761565269?e=2147483647&v=beta&t=65l4yZzam4Wpx20qBMptZluhjSq6PFdJae2EtobPl8U" alt="Team Member 2">
+                <h5>Usman Khan</h5>
+                <p>Marketing Manager</p>
+                <p>Usman leads the marketing team and works tirelessly to ensure our brand reaches new heights.</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgGaPJK3yJYyD2hEex282pKtFnKqZKvE8EobQ7wXn4QeD3jTrqzn5IIb17lVjnlxdlxlg&usqp=CAU" alt="Team Member 3">
+                <h5>Haroon Khan</h5>
+                <p>Product Specialist</p>
+                <p>Haroon is an expert in electronics, responsible for sourcing the best products for our store.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer start -->
+<footer class="bg-dark mt-4 text-warning py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <ul class="list-unstyled">
+                    <h4>Contact us</h4>
+                    <p>SD-1, Block A North Nazimabad Town, Karachi, 74700</p>
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox" class="text-decoration-none text-warning">U&U/Electronics@gmail.com</a></p>
+                    <p class="mb-0">Phone: 0257-32124233</p>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <h4>COMPANY</h4>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-decoration-none text-warning">Home</a></li>
+                    <li><a href="aboutus.html" class="text-decoration-none text-warning">About</a></li>
+                    <li><a href="contactus.html" class="text-decoration-none text-warning">Contact us</a></li>
+                    <li><a href="product.html" class="text-decoration-none text-warning">Products</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <h4>About</h4>
+                <ul class="list-unstyled">
+                    <li><a href="contactus.html" class="text-decoration-none text-warning">FAQS</a></li>
+                    <li><a href="contactus.html" class="text-decoration-none text-warning">Help?</a></li>
+                    <li><a href="contactus.html" class="text-decoration-none text-warning">Services</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 text-center text-md-end">
+                <h4>SOCIAL MEDIA</h4>
+                <div>
+                    <a href="https://www.instagram.com/" class="text-decoration-none text-warning"><i class="bi bi-instagram fs-2 me-3"></i></a>
+                    <a href="https://www.facebook.com/" class="text-decoration-none text-warning"><i class="bi bi-facebook fs-2 me-3"></i></a>
+                    <a href="https://twitter.com/" class="text-decoration-none text-warning"><i class="bi bi-twitter fs-2 me-3"></i></a>
+                    <a href="https://pk.linkedin.com/" class="text-decoration-none text-warning"><i class="bi bi-linkedin fs-2"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p class="mb-2 mb-md-0">2024&nbsp;U&U/Electronics@gmail.com. All Rights Reserved</p>
+            <ul class="list-unstyled d-flex mb-0">
+                <li><a href="contactus.html" class="text-decoration-none text-warning me-3">Terms of Service</a></li>
+                <li><a href="contactus.html" class="text-decoration-none text-warning">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+</body>
+</html>

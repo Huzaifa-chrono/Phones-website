@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Correctly include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+</head>
+<style>
+        /* Change the color of the toggler button */
+        .navbar-toggler {
+            border-color:rgb(241, 220, 28); /* yellow border color */
+        }
+    
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+       
+      /* Default styling for large screens */
+#carouselExampleAutoplaying {
+    height: 500px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading-container {
+    margin-top: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    #carouselExampleAutoplaying {
+        height: 300px; /* Reduce height for tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    #carouselExampleAutoplaying {
+        height: 200px; /* Further reduce height for phones */
+    }
+
+    .heading-container {
+        margin-top: 10px; /* Adjust spacing for smaller screens */
+        text-align: center; /* Center align text for better readability */
+    }
+}
+
+    </style>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-warning" href="#">U&U/Electronics</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-underline mx-auto mb-2 mb-lg-0"> <!-- Use mx-auto to center the nav items -->
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="aboutus.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contactus.html">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="product.html">Products</a>
+                    </li>
+                </ul>
+                <a href="login.html"><button type="button" class="btn btn-outline-warning me-2">Login</button></a>
+                <a href="sign in.html"><button type="button" class="btn btn-outline-warning">Sign in</button></a>
+                <a href="#" class="text-light ms-2" title="Cart">
+                    <button type="button" class="btn btn-outline-warning"><i class="bi bi-bag-check-fill"></i>&nbsp;Cart</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+<!-- carousel start -->
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-top: 56px;">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://media.istockphoto.com/id/1432675776/vector/novelty-modern-smartphone-gadget-14-version-set-5-pcs-new-original-colors-vector.jpg?s=612x612&w=0&k=20&c=iHQXxaZuyXK8nh_rvFNBdJh42Wb00rCK0GMkhBKgY48=" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://media.istockphoto.com/id/897691924/photo/smart-clock-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=8DbjfYEDWgeINb2wZT9sbvtkcVsy422AEMX3QagHse0=" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="https://media.istockphoto.com/id/1430390678/photo/apple-airpods-pro-2nd-generation-inside-case-next-to-packaging-box.jpg?s=612x612&w=0&k=20&c=2ed88o9jQ0deaQrgIUYnrmjjDnO7WKg2lU8UII3rVMc=" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- carousel end -->
+
+<div class="heading-container" style="margin-top: 20px;">
+    <h1>Catagerious</h1>
+</div>
+
+<!-- cards start -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmaoa9IcR3TemKu5OkM5jUUEcvC_QRu7X5dA&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Phones</h5>
+                    <p class="card-text">Iphones and Androids Smart phones</p>
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLEjxD3Snc4v6xIibZqIdeY1CvnSLuzPyGg&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">SmartWatch</h5>
+                    <p class="card-text">Apple watches and Galaxy watches</p>
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2tp8eqjMsZfTyMwh3DIDkRgkpi8gSNEHz7g&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Headsets</h5>
+                    <p class="card-text">Apple headsets and Beats headsets </p>
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrJa32PmIk_fDN-QSOJTMOT5I2QSKqdsPSRQ&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Air pods</h5>
+                    <p class="card-text">Apple air pods and Galaxy air pods </p>
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://i5.walmartimages.com/seo/Phone-Charger-6Ft-Charging-Cable-Wall-Power-Adapter-Plug-Block-Compatible-iPhone-14-pro-max-13-12-X-8-8-Plus-7-7-Plus-6-6S-6-Plu-5S-SE-Mini-Air-Pro_d641bbee-a7e7-4aa6-9ab2-1a9c717517d0.f755294fa54de8fb8e4bab1e92a1bdec.jpeg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Chargers</h5>
+                    <p class="card-text">Apple chargers and Android chargers</p>
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGRgVtI7ooCgwxHZzjdHOUAYilZI7Uxgt12A&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <br><br><br>
+                    <h5 class="card-title">Laptops</h5>
+                    <p class="card-text">Apple mac and Asus Gaming Laptops</p>
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8PAV6wblCo_oEpJKLqRD0LSXDiYrS8o8-LA&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Power Bangs </h5>
+                    <p class="card-text">Power bangs for Android for Apple</p>
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://cdn.mos.cms.futurecdn.net/N5v7A65ccEqTjkBSChxBUW-320-80.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Tablets</h5>
+                    <p class="card-text">Apple Ipads and Gaming Galaxy Tabs</p>
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Explore</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- cards end -->
+
+<div class="heading-container" style="margin-top: 20px;">
+    <h1>Avalible Brands Products</h1>
+</div>
+
+<!-- brands start -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://static.vecteezy.com/system/resources/previews/019/136/325/non_2x/apple-logo-apple-icon-free-free-vector.jpg" alt="...">
+                <div class="card-body text-center">
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Visit Store</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvEYwYQ3l8k6e44JliUNGBGXF-WQ_m14bgeA&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Visit Store</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-RwuYjamrHesy7Mti9cYjeegnbYhE3016gQ&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Visit Store</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEJHKwJ0kuQXsuVCSbFuJ39zR91jtxvQVaKQ&s" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Visit Store</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUUeeN-T0q4qj1AC4AEQ32MFjCITI-cBawRA&s" class="card-img-top" alt="...">
+                <br>
+                <div class="card-body text-center">
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Visit Store</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2OpKlkH-pVD86YazbXFx3JOL5Y2clLPUoAA&s" class="card-img-top" alt="...">
+                <br><br><br>
+                <div class="card-body text-center">
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Visit Store</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/927/489/non_2x/infinix-brand-logo-phone-symbol-name-black-design-china-mobile-illustration-free-vector.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Visit Store</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+            <div class="card border-warning" style="width: 100%;">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/927/602/non_2x/vivo-brand-logo-phone-symbol-name-black-design-chinese-mobile-illustration-free-vector.jpg" alt="...">
+                <div class="card-body text-center">
+                    <a href="product.html"><button type="button" class="btn btn-outline-warning">Visit Store</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- brands end -->
+<!-- footer start -->
+<footer class="bg-dark mt-4 text-warning py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 mb-3">
+                <ul class="list-unstyled">
+                    <h4>Contact us</h4>
+                    <p>SD-1, Block A North Nazimabad Town, Karachi, 74700</p>
+                    <p><a href="https://mail.google.com/mail/u/0/#inbox" class="text-decoration-none text-warning">U&U/Electronics@gmail.com</a></p>
+                    <p class="mb-0">Phone: 0257-32124233</p>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <h4>COMPANY</h4>
+                <ul class="list-unstyled">
+                    <li><a href="index.html" class="text-decoration-none text-warning">Home</a></li>
+                    <li><a href="aboutus.html" class="text-decoration-none text-warning">About</a></li>
+                    <li><a href="contactus.html" class="text-decoration-none text-warning">Contact us</a></li>
+                    <li><a href="product.html" class="text-decoration-none text-warning">Products</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-3">
+                <h4>About</h4>
+                <ul class="list-unstyled">
+                    <li><a href="contactus.html" class="text-decoration-none text-warning">FAQS</a></li>
+                    <li><a href="contactus.html" class="text-decoration-none text-warning">Help?</a></li>
+                    <li><a href="contactus.html" class="text-decoration-none text-warning">Services</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 text-center text-md-end">
+                <h4>SOCIAL MEDIA</h4>
+                <div>
+                    <a href="https://www.instagram.com/" class="text-decoration-none text-warning"><i class="bi bi-instagram fs-2 me-3"></i></a>
+                    <a href="https://www.facebook.com/" class="text-decoration-none text-warning"><i class="bi bi-facebook fs-2 me-3"></i></a>
+                    <a href="https://twitter.com/" class="text-decoration-none text-warning"><i class="bi bi-twitter fs-2 me-3"></i></a>
+                    <a href="https://pk.linkedin.com/" class="text-decoration-none text-warning"><i class="bi bi-linkedin fs-2"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <p class="mb-2 mb-md-0">2024&nbsp;U&U/Electronics@gmail.com. All Rights Reserved</p>
+            <ul class="list-unstyled d-flex mb-0">
+                <li><a href="contactus.html" class="text-decoration-none text-warning me-3">Terms of Service</a></li>
+                <li><a href="contactus.html" class="text-decoration-none text-warning">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<!-- footer end -->
+
+</body>
+</html>
